@@ -1,0 +1,298 @@
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.container{
+	width: 100%;
+	height: 1050px;
+	background-color: #232424;
+	background: linear-gradient(#101010 15%, #353939 20%, #232424 30%);
+}
+
+.header {
+	width: 100%;
+	height: 60px;
+	background-color: black;
+}
+.wrap {
+	width: calc(60%);
+	margin: auto;
+}
+#firstList  {
+	float: left;
+	width: calc(40%);
+	height: 60px;
+	line-height: 60px;
+}
+#secondList  {
+	float: right;
+	width: calc(40%);
+	height: 60px;
+	line-height:60px;
+}
+#logo {
+	display: inline-block;
+	width: calc(20% - 40px);
+	margin: 0px 10px;
+	padding: 0px 10px;
+}
+#logo img{
+	width: 100%;
+}
+#firstList ul, #secondList ul {
+	list-style: none;
+	width: 100%;
+}
+#firstList ul li, #secondList ul li {
+	display: inline-block;
+	width: calc(32%);
+}
+a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #D1D1D1;
+}
+
+/* MAIN */
+.main{
+	width: calc(60%);
+	height: 800px;
+	margin: auto;
+}
+.headings {
+	width: 100%;
+	height: 150px;
+	margin: auto;
+	text-align: center;
+	padding-top: 70px;
+}
+.headings #p1 {
+	margin: auto;
+	height:30px;
+	font-size: 25px;
+	font-weight: bold;
+	color: #A6A6A6;
+}
+.headings #p2 {
+	margin: auto;
+	height:48px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #A6A6A6;
+}
+.headings button {
+	width: 150px;
+	height: 30px;
+	margin-top: 25px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #AE2948;
+}
+.posterDiv{
+	width: calc(100% - 30px);
+	height: 280px;
+	position: relative;
+}
+.poster {
+	width: calc(100% - 34px);
+	height: 250px;
+	border: 17px solid #0E0E0E;
+	border-radius: 5px;
+	margin: auto;
+	z-index: 2;
+}
+#leftbtn {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #0E0E0E;
+	color: white;;
+	top: 48%;
+	left: -21px;
+	position: absolute;
+	border: 0px;
+	z-index: 1;
+}
+ #rightBtn {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #0E0E0E;
+	color: white;;
+	top: 48%;
+	right: -21px;
+	position: absolute;
+	border: 0px;
+	z-index: 1;
+}
+#leftbtn i {
+	font-size:22px;
+	width: 22px;
+	float: left;
+	padding: 5px;  
+}
+#rightBtn i {
+	font-size:22px;
+	width: 22px;
+	float: right;
+	padding: 5px; 
+}
+
+.poster img {
+	width: 100%;
+	height: 250px;
+}
+
+/* moreDetail */
+.moreDetail {
+	width: 100%;
+	height: 280px;
+	margin-top: 20px;
+}
+.Detail {
+	width: calc(33% - 42px);
+	height: 230px;
+	float: left;
+	padding: 10px 20px;
+	border-right: 1px solid grey;
+}
+.Detail h5 {
+	color: ;
+	margin-bottom: 10px;
+	color: white;
+}
+.Detail p {
+	font-size: 12px;
+	line-height: 1.4;
+	color: grey;
+}
+#about {padding-left: 0px;}
+#otherDetail {
+	padding-right: 0px; 
+	border-right: 0px; 
+}
+
+#contact h5, #socialDetail h5{
+	color: #EF5011;
+}
+.cont i {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	color: white;
+}
+.cont p {
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+}
+.cont p a{
+	font-size: 12px;
+	color: grey;
+}
+.cont{
+	margin-bottom: 5px;
+}
+#socialDetail{
+	display: inline-block;
+	margin-top: 15px;
+	text-decoration: none;
+}
+
+ #socialDetail header{
+  	height: 30px;
+  	margin-bottom: 10px;
+  }
+ #socialDetail img {
+  	width: calc(20% - 10px);
+  	height: 30px;
+  	border-radius: 5px;
+  	float: left;
+  	margin: 0px 5px;
+  }
+  #socialDetail a {
+  	text-transform: none;
+  }
+
+/* footer */
+
+.footer{
+	width: 100%;
+	height: 180px;
+	background-color: #0D0D0D;
+	background: linear-gradient(#0D0D0D 30%, #232424 55%, #0D0D0D 70%);
+}
+.wrap .info{
+	width: 100%;
+	height: 100px;
+}
+.wrap .post {
+	width: calc(33% - 40px);
+	height: 100px;
+	float: left;
+	margin: 5px 20px;
+}
+#Myfriend{margin-left: 0px;}
+#Myfriend #image {
+	float: left;
+	width: 45%;
+	height: 100px;
+}
+ #image img {
+ 	width: 100%;
+ 	height: 100px;
+ }
+#Myfriend #contant{
+	display: inline-block;
+	width: calc(50% - 20px);
+	height: 80px;
+	margin-left: 20px;
+}
+#Myfriend #contant h5{
+	color: white;
+	margin: 10px 0px; 
+}
+#Myfriend #contant p {
+	color: grey;
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+
+#thank {
+	text-align: center;
+}
+#thank p {
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 10px;
+	color: #A6A6A6;
+}
+#thank button {
+	margin-top: 20px;
+	width: 150px;
+	height: 33px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #AE2948;
+}
+#RECENT h5{
+	color: white;
+	margin: 10px 0px;
+}
+#RECENT p {
+	font-size: 12px;
+	color: grey;
+	margin-bottom: 5px;
+}
+#copyright {
+	width: 100%;
+	height: 20px;
+	margin-top: 25px;
+}
+#copyright p {
+	font-size: 12px;
+	color: grey;
+	text-align: center;

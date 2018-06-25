@@ -1,0 +1,436 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+.container{
+	width: calc(94%);
+	height: 1050px;
+	border-top: 10px solid black;
+	background-color: white;
+	margin: auto;
+}
+
+.wrap {
+	width: calc(70%);
+	height: 1050px;
+	margin: auto;
+	background-color: #E5E5E5;
+}
+.header{
+	width: calc(100%);
+	height: 70px;
+	padding: 10px 0px;
+	position: relative;
+}
+.header #left{
+	float: left;
+	width: calc(30%);
+}
+.header #left #logo {
+	width: 70%;
+	height: 70px;
+	position: relative;
+}
+.header #logo #Clogo{
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: orange;
+	color: white;
+	font-size: 60px;
+	font-weight: bold;
+	
+}
+.header #logo #yellow {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-color:rgba(255,255,0,0.4);
+	position: absolute;
+	left: 40px;
+	top: 8px;
+}
+.header #logo #CStudio{
+	width: 70px;
+	height: 50px;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: bold;
+	position: absolute;
+	left: 56px;
+	top: 18px;
+}
+.header #right{
+	display: inline-block;
+	width: calc(70%);
+}
+.header #right #email {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	height: 20px;
+	width: calc(25%);
+}
+#email p {
+	width: 100%;
+	font-size: 14px;
+	text-align: right;
+}
+.header #right #nav {
+	width: calc(70%);
+	height: 30px;
+	top: 40%;
+	position: absolute;
+}
+.header #right #nav ul {
+	list-style: none;
+	width: calc(100%);
+}
+#nav ul li {
+	float: left;
+	padding: 0px 8px;
+	width: calc(16% - 16px);
+}
+#nav ul li a {
+	text-decoration: none;
+	color: #F4830B;
+	font-size: 12px;
+	font-weight: bold;
+
+}
+
+/* POSTER */
+
+.poster {
+	width: 100%; 
+	height: 250px;
+	padding: 20px 0px;
+	border-top: 1px solid grey;
+}
+.pic {
+	width: 100%;
+	height: 250px;
+	background-color: #F4830B;
+}
+.pic #text {
+	width: calc(55% - 30px);
+	height: 230px;
+	padding: 15px;
+	float: left;
+}
+ #text #top {
+ 	width: 100%;
+ 	height: 180px;
+ }
+ #text #top p {
+ 	width: 80%;
+ 	font-size: 60px;
+ 	line-height: 55px;
+ 	font-weight: bold;
+ 	color: white;
+ }
+ #text #footer {
+ 	width: calc(100% - 20px);
+ 	height: 15px;
+ 	background-color: yellow;
+ 	padding: 10px;
+ }
+ #footer #p1 {
+ 	float: left;
+ 	width: 55%;
+ 	font-size: 11px;
+ 	height: 15px;
+ 	line-height: 15px;
+ 	font-weight: bold;
+ }
+#footer #p2 {
+ 	float: right;
+ 	width: 38%;
+ 	font-size: 11px;
+ 	height: 15px;
+ 	line-height: 15px;
+ 	font-weight: bold;
+ }
+#footer #p2 i {
+	width: 15px;
+	height: 15px;
+	font-size: 14px;
+	line-height: 15px;
+	float: right;
+}
+
+.pic #image {
+	width: calc(45%);
+	height: 250px;
+	float: right;
+	bottom: 0px;
+	right: 0px;
+}
+#image img {
+	width: 100%;
+	height: 250px;
+}
+
+/* MAII Details */
+
+.mainC {
+	width: calc(100%);
+	height: 300px;
+	border-top: 1px solid grey;
+	padding-top: 10px;
+}	
+.detail{
+	float: left;
+	width: calc(33.34% - 30px);
+	height: 300px;
+	margin: 0px 20px;
+}
+.detail header {
+	height:40px;
+	border-bottom: 3px solid black;
+	line-height: 40px;
+}	
+.detail  h3 {
+	overflow: auto;
+	width: 100%;
+}
+.detail  h3 i {
+	width: 30px;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+}
+.detail main {
+	padding: 20px 0px;
+	height: 220px;
+}
+.detail main p {
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+#About {margin-left: 0px;}
+#About a {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+	color: orange;
+}
+#About #p2 {
+	overflow: auto;
+	height: 24px;
+	line-height: 22px;
+}
+#About #p2  i {
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-right: 10px;
+}
+#benefits p {overflow: auto;}
+#benefits p i {
+	width: 14px;
+	height: 14px;
+	float: left;
+	font-size: 15px;
+	margin-right: 5px;
+	background-color: grey;
+}
+
+#testimonitials {margin-right: 0px;}
+#testimonitials #p2{
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* PROTFOLIO Images */
+		
+.PROTFOLIO {
+	width: calc(100%);
+	height: 200px;
+	border-top: 1px solid grey;
+	margin: auto;
+}
+.PROTFOLIO header {
+	height: 30px;
+	padding: 10px 0px;
+}
+.PROTFOLIO  h3 {overflow: auto;}
+  .PROTFOLIO  h3 i {
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+.PROTFOLIO main #img{
+	float: left;
+	width: calc(25% - 20px);
+	height: 130px;
+	position: relative;
+	margin-right: 20px;
+}
+#img img{
+	width: 100%;
+	height: 130px;
+}
+#img #btn {
+	position: absolute;
+	right: 0px;
+	height: 22px;
+	bottom: 0px;
+	width: calc(60% - 20px);
+	line-height: 22px;
+	padding: 0px 10px;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #F4830B;
+
+}
+#img #btn i {
+	height: 20px;
+	font-size: 16px;
+	line-height: 20px;
+	float: right;
+}
+
+ /* BLOG */
+
+ .BLOG {
+ 	width: 100%;
+ 	height: 100px;
+ 	border-top: 1px solid grey;
+ }
+ .BLOG #left{
+ 	float: left; 
+ 	width: calc(70%);
+ }
+  .BLOG #left header{
+  	height: 30px;
+  	margin: 15px 0px;
+  }
+  .BLOG  h4 {overflow: auto;}
+  .BLOG  h4 i {
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+.BLOG #left main p {
+ font-size: 12px;
+ padding-right: 20px;
+}
+
+ .BLOG #right{
+ 	width: calc(30%);
+ 	display: inline-block;
+ }
+ .BLOG #right header{
+  	height: 30px;
+  	margin: 15px 0px;
+  }
+  .BLOG #right img {
+  	width: calc(25% - 20px);
+  	height: 35px;
+  	border-radius: 50%;
+  	float: left;
+  	margin: 0px 10px;
+  }
+
+
+
+/*Footer*/
+
+.footer {
+	width: calc(94%);
+	height: 100px;
+	margin: auto;
+	background-color: lightgrey;
+}
+.footer #content {
+	width: calc(70%);
+	margin: auto;
+	height: 100px;
+}
+.footer #content #left {
+	width: calc(70%);
+	float: left;
+	height: 80px;
+}
+.footer #content #left ul{
+	list-style: none;
+	width: 100%;
+	padding: 10px 0px;
+	height: 20px;
+	margin-top: 20px;
+}
+#content #left ul li{
+ 	float: left;
+ 	border-left: 1px solid grey;
+ 	text-align: left;
+ 	padding: 0px 5px;
+ }
+#content #left ul #first {
+	padding-left: 0px;
+	border-left: 0px;
+}
+#content #left ul li a {
+  	text-decoration: none;
+  	font-size: 13px;
+  	color: grey;
+  	
+  }
+ #content #left p {
+  	font-size: 13px;
+  	color: grey;
+   }
+.footer #content #right {
+	width: calc(30%);
+	float: right;
+	height: 80px;
+}
+.footer #content #right #logo {
+	width: 70%;
+	height: 70px;
+	float: right;
+	position: relative;
+	width: 150px;
+	height: 60px;
+	margin: 20px 0px;
+}
+#content #right #logo #Clogo {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: orange;
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	position: absolute;
+	}
+#content #logo #yellow {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color:rgba(255,255,0,0.4);
+	position: absolute;
+	left: 38px;
+	top: 5px;
+}
+#content #logo #CStudio{
+	width: 70px;
+	height: 50px;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: bold;
+	position: absolute;
+	left: 50px;
+	top: 13px;
+}
