@@ -1,0 +1,362 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.container {
+	width: 100%;
+	height: 1140px;
+}
+.wrap {
+	width: calc(50% - 2px);
+	height: 1140px;
+	margin: auto;
+	border: 1px solid red;
+}
+.header{
+	height: 110px;
+	width: calc(100% - 5px);
+	border-left: 5px solid orange;
+	background-color: grey;
+}
+.header #heading {
+	float: left;
+	width: calc(46% - 20px);
+	height: 90px;
+	padding: 10px;
+	color: white;
+}
+.header #p1, .header #p3 {
+	font-size: 25px;
+	font-weight: bold;
+}
+.header #p2 {font-size: 24px;}
+
+/* Poster */
+.poster{
+	width: 100%;
+	height: 250px;
+	border-top: 3px solid white;
+	background-color: green;
+	position: relative;
+}
+.poster .btn {
+	position: absolute;
+	height: 25px;
+	width: 15px;
+	background-color: orange;
+}
+
+.poster .btn i {
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	line-height: 25px;
+}
+.poster #btn-L{
+	left: 0px;
+	top: 46%;
+}
+.poster #btn-R{
+	right: 0px;
+	top: 46%;
+}
+.Middel {
+	width: 80%;
+	margin: auto;
+}
+.poster #left {
+	float: left;
+	width: calc(55%);
+}
+.poster #left #head {
+	height: 40px;
+	width: 100%;
+	margin: 10px 0px;
+}
+.poster #left #head img {
+	float: left;
+	height: 40px;
+	width: 40px;
+}
+.poster #left #head #p4 {
+	display: inline-block;
+	font-size: 22px;
+	width: calc(45% - 5px);
+	margin-left: 5px; 
+	line-height: 40px;
+	color: white;
+}
+.poster #left #head #p5 {
+	display: inline-block;
+	font-size: 9px;
+	height: 20px;
+	color: grey;
+	padding-top: 20px;
+}
+.poster #img1 {
+	width: 100%;
+	height: 150px;
+}
+.poster #img1 img {
+	width: 100%;
+	height: 150px;
+}
+
+.poster #right {
+	display: inline-block;
+	width: calc(45%);
+}
+#nav {
+	height: 20px;
+	width: calc(100%);
+	background-color: orange;
+	box-shadow: -5px -5px yellow;
+	margin-top: 20px;
+}
+#nav a {
+	text-decoration: none;
+	float: left;
+	font-size: 9px;
+	width: calc(33.33% - 12px);
+	border-right: 1px solid grey;
+	padding: 0px 4px;
+	height: 20px;
+	line-height: 20px;
+}
+#nav a i {
+	float: left;
+	width: 20%;
+	height: 20px;
+	line-height: 20px;
+}
+#nav a p {
+	width: 80%;
+	text-align: center;
+	display: inline-block;
+}
+.poster #right #cont {
+	width: 100%;
+	height: 100px;
+	padding: 50px 0px 10px 0px;
+}
+ #cont #p6{
+ 	font-size: 23px;
+ 	text-align: center;
+ 	color: yellow;
+ 	letter-spacing: 1px;
+ }
+ #cont #p7{
+ 	font-size: 23px;
+ 	text-align: center;
+ 	color: white;
+ 	letter-spacing: 1px;
+ }
+
+/* design  */
+ .design {
+ 	width: 100%;
+ 	height: 130px;
+ }
+.design .typeOfDesign {
+	width: calc(32% - 2px);
+	height: 100px;
+	float: left;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border-left: 1px solid lightgrey;
+}
+#its_free{border-right: 1px solid lightgrey;}
+.typeOfDesign i {
+	font-size: 55px;
+	color: orange;
+}
+.typeOfDesign p { padding: 10px 0px; }
+
+/* dolor_sit */
+
+.dolor_sit {
+	width: 100%;
+	height: 300px;
+	background-color: yellow;
+}
+.dolor_sit #head {
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	padding: 20px 0px;
+}
+.dolor_sit #head h3 {
+	font-size: 22px;
+	color: white;
+}
+.dolor_sit #cover{
+	width: 100%;
+	height: 130px;
+}
+#cover .about {
+	height: 130px;
+	width: calc(33.33%);
+	float: left;
+	background-color: orange;
+}
+#cover #text{width: 100%; height: 130px;}
+#cover #text p{
+	font-size: 14px;
+	padding: 15px 10px;
+	line-height: 15px;
+	color: lightgrey;
+}
+#covert #image {width: 100%; height: 130px;}
+#covert #image img {height: 130px;}
+
+ #cover #T_icon i {
+	text-align: center;
+	line-height: 90px;
+	font-size: 80px;
+	padding: 20px ;
+}
+#covert #T_icon{width: 100%; height: 130px;}
+.dolor_sit #celender {
+	width: 100%;
+	height: 60px;
+}
+#celender #date{
+	width: 75px;
+	height: 60px;
+	background-color: skyblue;
+}
+#celender #date #p7 {
+	width: 100%;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+#celender #date #p8 {
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+}
+
+.dolor_sit #foot {
+	width: 90%;
+	margin: auto;
+	height: 10px;
+	padding: 15px 0px;
+}
+.dolor_sit #foot #footBox {
+	height: 12px;
+	width: 100%;
+	background-color: lightgrey;
+	border-radius: 10px;
+	z-index: 2;
+	position: relative;
+}
+.dolor_sit #foot #footIn {
+	width: 30%;
+	height: 12px;
+	background-color: blue;
+	border-radius: 10px;
+	left: 35%;
+	z-index: 4;
+	position: absolute;
+}
+
+
+ /* footer */
+
+#footer {
+ 	width: 100%;
+ 	height: 300px;
+ 	background-color: grey;
+ 	border-bottom: 2px solid black;
+ }
+#footer header {
+ 	height: 30px;
+ 	padding: 15px 0px;
+ }
+#footer header h3 {
+  	color: yellow;
+ 	text-align: center;
+ 	font-size: 22px;
+ 	width: 100%;
+  }
+#footer #left {
+	float: left;
+	width: 60%;
+	height: 200px;
+	padding-bottom: 20px;
+}
+#footer #left img {
+	width: 100%;
+	height: 200px;
+}
+
+#footer #right {
+	display: inline-block;
+	width: 40%;
+	height: 200px;
+}
+#footer #right ul {
+	width: calc(100% - 8px);
+	margin-left: 8px;
+	list-style: none;
+}
+#footer #right ul li {
+	padding: 10px 0px;
+	color: white;
+	font-size: 12px;
+	position: relative;
+	padding-left: 12px;
+}
+#footer #right li::before {
+  content: "• ";
+  color: yellow;  
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 12px;
+  padding-right: 10px;
+  position: absolute;
+  left: 0;
+}
+
+/* footer-doun */
+.footer-doun {
+	height: 45px;
+	width: 100%;
+	background-color: grey;
+}
+.footer-doun #left {
+	float: left;
+	width: 50%;
+	padding: 5px 0px;
+}
+.footer-doun #left img {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+}
+.footer-doun #left p {
+	display: inline-block;
+	padding-left: 10px;
+	font-size: 18px;
+	height: 30px;
+	line-height: 30px;
+	color: white;
+}
+.footer-doun #right {
+	display: inline-block;
+	width: 50%;
+	padding: 5px 0px;
+}
+.footer-doun #right p {
+	font-size: 11px;
+	text-align: right;
+	height: 30px;
+	line-height: 30px;
+	color: white;
+}
