@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>javascript </title>
+</head>
+<body>
+
+	<input type="text" id="inp1">
+	<button onclick="Upper()">UpperCase</button>
+	<button onclick="Reserse()">Reserse</button>
+	<br><br>
+
+	<p id="inp2"></p>
+
+	<script type="text/javascript">
+		function Upper(){
+			var t="";
+			var x = document.getElementById("inp1").value;
+			 var y = x.length;
+			 var i;
+
+			for (i = 0; i < y; i++) {
+				var z = x.charAt(i);
+
+				var m = z.charCodeAt(z) ;
+				var v = m-32;
+
+				var u = String.fromCharCode(v);
+				 t = t + u;
+	        }
+	       document.getElementById("inp2").innerHTML = t;
+		}
+
+//Reverse Function
+
+		function Reserse(){
+			var x = document.getElementById("inp1").value;
+			var y = x.length;
+			 var i;
+			 var m = "";
+
+			 for (i = y; i >= 0; i--) {
+				var z =x.charAt(i);
+					m +=z;			
+			}
+			document.getElementById("inp2").innerHTML = m;
+			}
+
+	</script>
+</body>
+</html>

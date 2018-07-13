@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Patten</title>
+</head>
+<body>
+
+	<input type="text" id="inpt" placeholder="Enter No." ><br>
+	<button onclick="firstPatten()">First Patten</button>
+	<button onclick="secondPatten()">Second Patten</button>
+	<button onclick="thirdPatten()">Third Patten</button>
+	<button onclick="demo()">Demo Patten</button>
+
+	<p id="demo"></p>
+
+
+	<script type="text/javascript">
+
+// First Patten
+		function firstPatten(){
+			var limt = document.getElementById("inpt").value;
+			var star="*";
+			var text="";
+
+			for(var r=1; r<=limt; r++){
+
+				for(var c=1; c<=r; c++){
+					text += star ;
+				}
+				text +="<br>";
+			}
+
+			document.getElementById("demo").innerHTML = text;
+		}
+
+		
+// Second Patten
+		function secondPatten(){
+			var limt = document.getElementById("inpt").value;
+			var star="*";
+			var text="";
+
+			for(var i=1; i<=limt; i++){
+
+				var j ;
+				for(j=1; j<=limt-i; j++){
+					text +="&nbsp;&nbsp;";
+				}
+				for(; j<=limt; j++){
+					text += star ;
+				}
+				text +="<br>";
+			}
+
+			document.getElementById("demo").innerHTML = text;
+		}
+
+// Third Patten
+		function thirdPatten(){
+			var limt = document.getElementById("inpt").value;
+			var star="*";
+			var text="";
+
+			for(var i=1; i<=limt; i++){
+				var j ;
+				//first haf
+				for(j=1; j<=limt-i; j++){
+					text +="&nbsp;&nbsp;";
+				}
+				for(; j<=limt; j++){
+					text += star ;
+				}
+				//secont haf
+				for( j=2; j<=i; j++){
+					text += star ;
+				}
+				text +="<br>";
+			}
+
+			document.getElementById("demo").innerHTML = text;
+		}
+
+		// Demo 
+		function demo(){
+			var limt = document.getElementById("inpt").value;
+			var star="*";
+			var text="";
+
+			for(var i=1; i<=limt; i++){
+				var j;
+				for(j=1; j<=limt-i; j++){
+					text+="&nbsp;&nbsp;";
+				}
+				for(; j<=limt; j++){
+					text+= star;
+				}
+				for(j=1; j<=i; j++){
+					text+= star;
+				}
+				text +="<br>";
+			}
+
+			document.getElementById("demo").innerHTML = text;
+		}
+
+	</script>
+
+</body>
+</html>

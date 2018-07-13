@@ -1,0 +1,346 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.container{
+	width: 100%;
+	height: 850px;
+}
+.wrap{
+	width: calc(80% - 2px);
+	height: 820px;
+	margin: auto;
+	border: 1px solid grey;
+	position: relative;
+}
+.center{
+	width: calc(70%);
+	margin: auto;
+}
+.header {
+	width: 100%;
+	height: 90px;
+	padding-top: 10px;
+	background-color: grey;
+}
+.header #left {
+	width: 30%;
+	height: 40px;
+	float: left;
+
+}
+.header #left #logo{
+	padding: 5px 10px;
+	width: 64%;
+	height: 25px;
+	border: 1px dotted white;
+}
+.header #left #logo img {
+	width: 25px;
+	height: 25px;
+	margin-right: 8px;
+	float: left;
+}
+.header #left #logo span {
+	font-size: 15px;
+	color: white;
+	height: 25px;
+	display: inline-block;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+.header #right {
+	width: 70%;
+	height: 40px;
+	padding-top: 6px;
+	display: inline-block;
+}
+.header #right #cont{
+	width: 85%;
+	float: left;
+}
+#cont .info {
+	float: left;
+	width: calc(33%);
+	height: 40px;
+}
+#cont .info #icon{
+	float: left;
+	width: 20%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+#cont .info #icon i {
+	color: lightgrey;
+	font-size: 18px;
+}
+#cont .info #detail{
+	width: 80%;
+	height: 40px;
+	line-height: 15px;
+	display: inline-block;
+}
+#cont .info #detail p {
+	color: lightgrey; 
+	font-size: 10px; 
+}
+#cont .info #detail #p1 { color: white; }
+
+.header #right #Lasticon {
+	width: 15%;
+	display: inline-block;
+}
+.header #right #Lasticon a {
+	color: yellow;
+	display: inline-block;
+	padding-left: 3px;
+	text-align: center;
+}
+
+
+.header #nav{
+	width: 70%;
+	height: 35px;
+	left: 15%;
+	top: 87px;
+	z-index: 2;
+	position: absolute;
+	background-color: white;
+}
+.header #nav #middel {
+	width: 80%;
+	margin: auto;
+	height: 35px;
+}
+#middel ul{
+ 	width: 100%;
+ 	height: 35px;
+ 	list-style: none;
+}
+#middel ul li {
+ 	float: left;
+ 	width: calc(14%);
+}
+#middel ul li a {
+	font-size: 10px;
+	color: grey;
+	text-decoration: none;
+	height: 35px;
+	line-height: 35px;
+}
+
+/* Poster */
+.poster{
+	width: 100%;
+	height: 300px;
+	position: relative;
+}
+.poster img {
+	width: 100%;
+	height: 300px;
+}
+.poster #btnL {
+	float: left;
+	position: absolute;
+	top: 46%;
+	right: 5%;
+}
+.poster #btnR {
+	float: right;
+	position: absolute;
+	top: 46%;
+	left: 5%;
+}
+.poster i {
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 18px;
+	text-align: center;
+}
+.poster #Theme {
+	width: calc(30% - 30px);
+	height: 180px;
+	position: absolute;
+	left: 15%;
+	top: 50px;
+	padding: 15px;
+	background-color: rgba(0, 0, 0, 1);
+}
+.poster #Theme h5 {
+	color: yellow;
+	padding: 5px;
+	border-bottom: 1px solid grey;
+}
+.poster #Theme h2 {
+	color: white;
+	padding: 10px 0px;
+}
+.poster #Theme p {
+	font-size: 10px;
+	color: grey;
+}
+.poster #Theme button {
+	background-color: yellow;
+	color: black;
+	font-size: 10px;
+	width: 80px;
+	height: 30px;
+	font-weight: bold;
+	margin: 12px 0px 0px 5px;
+	padding: 5px;
+}
+
+/* Project */
+.project {
+	width: 100%;
+	height: 35px;
+	background-color: lightgrey;
+}
+.project #left{
+	float: left;
+	height: 35px;
+	width: calc(65%);
+}
+.project #left #p3 {
+	font-size: 13px;
+	height: 35px;
+	line-height: 35px;
+}
+
+.project #right{
+	display: inline-block;
+	height: 35px;
+	width: calc(35%);
+}
+.project #right #btn1 {
+	background-color: orange;
+	font-size: 8px;
+	font-weight: bold;
+	padding: 5px;
+	margin: 5px 0px 5px 5px;
+	height: 25px;
+}
+.project #right #btn2 {
+	background-color: lightgrey;
+	font-size: 8px;
+	font-weight: bold;
+	padding: 5px;
+	margin: 5px;
+	height: 25px;
+}
+
+/* Main */
+.main {
+	width: 100%;
+	height: 280px;
+	padding: 20px 0px;
+}
+.main #left{
+	float: left;
+	height: 35px;
+	width: calc(65%);
+}
+.main #left .construct{
+	float: left;
+	width: calc(50% - 15px);
+	padding-right: 15px;
+	height: 260px;
+
+}
+.main #left .construct img {
+	width: 100%;
+	height: 120px;
+}
+.main #left .construct h4 {
+	padding: 10px 0px;
+	font-size: 13px;
+} 
+.main #left .construct p {
+	font-size: 11px;
+	color: grey;
+}
+.main #left .construct a { 
+	font-size: 12px; 
+	text-decoration: none;
+	font-weight: bold;
+	color: skyblue;
+}
+
+.main #right {
+	display: inline-block;
+	height: 35px;
+	width: calc(35%);
+}
+.main #right #constraction {
+	width: calc(100%);
+	height:60px;
+	padding-bottom: 10px;
+}
+.main #right #constraction #image {
+	width: 25%;
+	height: 50px;
+	float: left;
+}
+.main #right #constraction #image img {
+	width: 100%;
+	height: 50px;
+}
+.main #right #constraction #detail {
+	width: calc(75% - 5px);
+	height: 50px;
+	padding-left: 5px;
+	display: inline-block;
+}
+.main #right #constraction #detail h4 {
+	font-size: 10px;
+	padding-bottom: 5px;
+}
+.main #right #constraction #detail p {
+	font-size: 10px;
+	color: grey;
+} 
+
+/* Footer */
+.footer {
+	width: 100%;
+	height: 32px;
+	background-color: rgba(0, 0, 0, .7);
+}
+.footer .center{
+	background-color: rgba(0, 0, 0, .8);
+}
+.footer  #mid {
+	width: 80%;
+	margin: auto;
+}
+#mid ul{
+ 	width: 100%;
+ 	height: 32px;
+ 	list-style: none;
+ 	transform: skew(-30deg);
+}
+#mid li {
+ 	float: left;
+ 	width: calc(14.2%);
+ 	border-right: 1px solid white;
+ 	text-align: center;
+ 	height: 32px;
+}
+#mid ul li a {
+	font-size: 8px;
+	color: white;
+	text-decoration: none;
+	padding: 3px 0px;
+	height: 18px;
+	margin: 6px 0px;
+}
+#mid #active {
+	background-color: grey;
+}
+#mid #active a {
+	color: white;
+	border-bottom: 2px solid yellow;
+}
