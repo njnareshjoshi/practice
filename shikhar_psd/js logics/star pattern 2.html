@@ -1,0 +1,22 @@
+<body>
+<input id="in1">
+<button type="button" onclick="draw()"> print </button>
+<p id="dis1"> </p>
+
+<script>
+ function draw()
+ { var a=document.getElementById("in1").value;
+ var i,b,v;
+ var z=" ";
+ 
+ for(i=a;i>=1;) 
+	{ for(b=1;b<=i-1;) { z+="&nbsp;&nbsp;"; b++;}
+	
+		for(v=b;v<=a;){z+="*"; v++;}
+	z+="<br />";
+	i--;}
+	document.getElementById("dis1").innerHTML=z;
+	<!-- document.write(z); -->
+};
+</script>
+</body>

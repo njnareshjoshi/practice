@@ -1,0 +1,41 @@
+<!doctype html>
+<html> 
+<head>
+<title> trying the title </title> 
+ </head>
+<body> 
+<input id="in1">
+<p id="dis1"> </p>
+<button onclick="check()"> hello </button>
+<button onclick="check1()"> factorial </button>
+
+<script>
+function check(){
+var i= document.getElementById("in1").value;
+var z=" ";
+	for (var x=1;x<=i;)
+	{z+="helo";
+		z+="<br>";
+		x++;}
+			document.getElementById("dis1").innerHTML =z;
+};
+</script>
+
+<script>
+function check1()
+{ var limt = parseInt(document.getElementById("in1").value);
+var i,k;
+var c =" ";
+ for(i=0;i<=limt;)
+	{ c+=i;
+		c+="*";
+		c+=limt;
+		
+	c+="+";
+	i++;}
+	
+	document.getElementById("dis1").innerHTML = c;
+};
+</script>
+</body>
+</html>

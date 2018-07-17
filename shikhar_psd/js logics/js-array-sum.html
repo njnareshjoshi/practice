@@ -1,0 +1,57 @@
+<body>
+<h1> array sum </h1>
+<input id="input1"> <br />
+<input id="input2">
+<button onclick="join()"> try try </button>
+<p id="display1"> </p>
+
+
+<script>
+var aarray=[];
+
+ function sum(aarray, mrr)
+ { var i,j;
+	var l="";
+	for(i=0;i<=aarray.length;)
+		{	for(j=1;j<=aarray.length-1;) 
+				{
+					if((i+j)==mrr)
+					{  
+						l+=i;
+						l+="+";
+						l+=j;
+						l+= "=";
+						l+=mrr;
+						l+="<br />"
+					}
+					
+				j++;
+				}
+				
+		i++;
+		}
+		
+		console.log(l);
+		document.getElementById("display1").innerHTML=l;
+}
+
+function join()
+{	
+	var str=document.getElementById("input1").value;
+	 var aar = str.split(",");
+	 for(var i = 0; i<=aar.length;i++)
+		{ var b =parseInt(aar[i]);
+			
+				aarray.push(b);
+	
+		}
+	
+			console.log(aarray);
+			var mrr = parseInt(document.getElementById("input2").value);
+	sum( aarray,mrr );
+}
+
+
+</script>
+
+</body>

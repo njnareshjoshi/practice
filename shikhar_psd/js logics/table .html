@@ -1,0 +1,19 @@
+<body>
+<h1> Print table </h1>
+<input id="in1">
+<button type="button" onclick="table()"> try </button>
+<p id="dis1"> </p>
+<script>
+function table() 
+{	var i = document.getElementById("in1").value;
+	var j;
+	var x=" ";
+	 for(j=1;j<=10;)
+		{ x+=(i*j);
+			j++;
+			x+="<br />";
+		}
+document.getElementById("dis1").innerHTML =(x);
+};
+</script>
+</body>
