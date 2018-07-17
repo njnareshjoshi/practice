@@ -9,16 +9,19 @@
 	<input type="text" id="inp1">
 	<button onclick="Upper()">UpperCase</button>
 	<button onclick="Reserse()">Reserse</button>
+	<button onclick="RvsUpper()">Res + Upper</button>
 	<br><br>
 
-	<p id="inp2"></p>
+	<p id="demo"></p>
 
 	<script type="text/javascript">
+
+//Uppercase
 		function Upper(){
-			var t="";
 			var x = document.getElementById("inp1").value;
 			 var y = x.length;
 			 var i;
+			 var t = "";
 
 			for (i = 0; i < y; i++) {
 				var z = x.charAt(i);
@@ -29,23 +32,41 @@
 				var u = String.fromCharCode(v);
 				 t = t + u;
 	        }
-	       document.getElementById("inp2").innerHTML = t;
+	       document.getElementById("demo").innerHTML = t;
 		}
 
-//Reverse Function
 
+//Reverse
 		function Reserse(){
 			var x = document.getElementById("inp1").value;
 			var y = x.length;
-			 var i;
-			 var m = "";
+			var m = "";
 
-			 for (i = y; i >= 0; i--) {
+			 for (var i = y; i >= 0; i--) {
 				var z =x.charAt(i);
-					m +=z;			
+				m += z;	
 			}
-			document.getElementById("inp2").innerHTML = m;
+			document.getElementById("demo").innerHTML = m;
+		}
+		
+
+//Reverse And Uppercase	
+		function RvsUpper(){
+			var x = document.getElementById("inp1").value;
+			var y = x.length;
+			var jon = "";
+
+			for(var i = y; i >= 0; i--){
+				var z = x.charAt(i);
+				var cc = z.charCodeAt(z);
+
+				var cap = cc - 32;
+				var upr = String.fromCharCode(cap);
+
+				jon +=  upr;
 			}
+			document.getElementById("demo").innerHTML = jon;
+		}
 
 	</script>
 </body>

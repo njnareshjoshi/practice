@@ -7,6 +7,7 @@
 		*{
 			margin: 0px;
 			padding: 0px;
+			background-color: lightgrey;
 		}
 		#container {
 			width: 408px;
@@ -20,65 +21,69 @@
 			background-color: grey;
 			float: left;
 		}
-		/*.box:hover {
-			background-color: red;
-		*/}
+		.red { background-color: red;}
+		.white { background-color: white;}
 
+		/*.active{background-color: red}*/
 	</style>
 </head>
 <body>
 
 	<div id="container">
-		<div class="box" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
-		<div class="box" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
-		<div class="box" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
-		<div class="box" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
-		<div class="box" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
-		<div class="box" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
-		<div class="box" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
-		<div class="box" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
-		<div class="box" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
-		<div class="box" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
-		<div class="box" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
-		<div class="box" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
-		<div class="box" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
-		<div class="box" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
-		<div class="box" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
-		<div class="box" onclick="clickMeEvent(this)"> </div>
+		<div class="box active" onclick="ChanceColor(this)"></div>
+		<div class="box" onclick="ChanceColor(this)"></div>
+		<div class="box" onclick="ChanceColor(this)"></div>
+		<div class="box" onclick="ChanceColor(this)"></div>
+		<div class="box" onclick="ChanceColor(this)"></div>
+		<div class="box" onclick="ChanceColor(this)"></div>
+		<div class="box" onclick="ChanceColor(this)"></div>
+		<div class="box" onclick="ChanceColor(this)"></div>
+		<div class="box" onclick="ChanceColor(this)"></div>
+		<div class="box" onclick="ChanceColor(this)"></div>
+		<div class="box" onclick="ChanceColor(this)"></div>
+		<div class="box" onclick="ChanceColor(this)"></div>
+		<div class="box" onclick="ChanceColor(this)"></div>
+		<div class="box" onclick="ChanceColor(this)"></div>
+		<div class="box" onclick="ChanceColor(this)"></div>
+		<div class="box" onclick="ChanceColor(this)"></div>
 	</div>
 
-	<script>
+<!-- 	<script>
 		function mUp(obj) {
    			 obj.style.backgroundColor="red";
 		}
 		function mDown(obj) {
    			 obj.style.backgroundColor="grey";
 		}
-	</script>
+	</script> -->
 
 	<script type="text/javascript">
-		function clickMeEvent(obj){
-			// if (obj.innerHTML== " ") {
-			// 	obj.style.backgroundColor= "red";
-			// 	return;
-			// }
-			// if (obj.innerHTML== "Thank you") {
-			// 	obj.innerHTML= "Goodbye";
-			// 	return;
-			// }
-			// if (obj.style.backgroundColor== "red") {
-			// 	obj.style.display= "none";
-			// 	return;
-			// }
-
-			if (obj.innerHTML== "m") {
+		function ChanceColor(obj){
+			if (obj.innerHTML== "") {
 				obj.style.backgroundColor= "red";
+				return;
 			}
-			else{
-				
+			if (obj.style.backgroundColor== "red") {
+				obj.style.backgroundColor= "white";
+				return;
 			}
+			if (obj.style.backgroundColor== "red") {
+				obj.style.display= "none";
+				return;
+			}
+
 		}
 		//obj.style.backgroundColor= "red"
+
+		// var header = document.getElementById("container");
+		// var btns = header.getElementsByClassName("box");
+		// for (var i = 0; i < btns.length; i++) {
+  // 			btns[i].addEventListener("click", function() {
+  //  			 	var current = document.getElementsByClassName("active");
+  //  			 	current[0].className = current[0].className.replace(" active", "");
+  //  			 	this.className += " active";
+  // 			});
+		// }
 	</script>
 </body>
 </html>

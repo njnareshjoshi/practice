@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find Given Array</title>
+</head>
+<body>
+
+	<input type="text" id="input" placeholder="Input"><br>
+	<input type="text" id="array" placeholder="Array"><br>
+	<button onclick="execution()">Search</button>
+	<p id="output"></p>
+
+	<script>
+		function findGivenArray(arr, input) {
+			var rst ="";
+			for(var i=0; i< arr.length; i++){
+				for(var j = i+1; j<=arr.length; j++){
+					var a = arr[i];
+					var b = arr[j];
+					if((a + b) == input){
+						var txt = a +" + "+ b +" = "+ input ;
+						rst += txt + "<br>";
+					}
+				}
+			}
+			if(rst == ""){rst = "No Input";}
+			console.log(rst);
+			return rst;
+
+		}
+
+		function execution(){
+			//var myArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+			var array = document.getElementById("array").value;
+			var myArray = [];
+			var strArray = array.split(",");
+			for(i=0; i<= strArray.length; i++){
+				myArray[i]= parseInt(strArray[i]);
+			}
+
+			var inp = document.getElementById("input").value;
+			var result = findGivenArray(myArray, inp);
+			document.getElementById("output").innerHTML = result;
+		}
+
+	</script>
+
+</body>
+</html>

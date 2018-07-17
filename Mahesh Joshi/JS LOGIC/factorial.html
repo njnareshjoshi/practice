@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Factorial</title>
+</head>
+<body>
+<input type="text" id="inp">
+<button onclick="factorial()">Factorial</button>
+<button onclick="factorial()">Factorial</button>
+<p id="output"></p>
+
+
+<script type="text/javascript">
+	function factorial(){
+		var input = document.getElementById("inp").value;
+		var rst = 1;
+		for(var i=input; i>=1; i--){
+			rst = rst*i;
+		}
+		if(input == ""){ rst = "No Input";}
+		console.log(rst);
+		document.getElementById("output").innerHTML = rst;
+	}
+
+</script>
+</body>
+</html>

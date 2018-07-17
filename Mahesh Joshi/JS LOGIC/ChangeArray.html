@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change Array Value</title>
+</head>
+<body>
+
+	<input type="text" id="input" placeholder="Input Value">
+	<button onclick="changeValue()">Change</button>
+	<p id="output"></p>
+
+	<script>
+		var myArray = [];
+		function changeValue(){
+			var inp = document.getElementById("input").value;
+			var strArray = inp.split(",");
+
+			var rst=1;
+
+			for(i=0; i< strArray.length; i++){
+				
+				myArray[i]= parseInt(strArray[i]);
+
+				
+			}
+			for(var i=0; i<myArray.length; i++){
+				rst = rst*i;
+				var x = rst/i;
+
+				console.log(rst);
+			}
+
+			
+		}
+	</script>
+
+</body>
+</html>

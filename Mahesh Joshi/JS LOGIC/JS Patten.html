@@ -2,14 +2,39 @@
 <html>
 <head>
 	<title>JavaScript Patten</title>
+
+	<style type="text/css">
+		.first {
+			width: 250px;
+			height: 25px;
+			background-color: yellow;
+			font-size: 18px;
+			padding-left: 19px;
+			color: black;
+			letter-spacing: 1px;
+		}
+		.second  {
+			width: 80px;
+			height: 20px;
+			background-color: skyblue;
+			color: black;
+			padding-left: 10px;
+			letter-spacing: 1px;
+		}
+	</style>
 </head>
 <body>
 
-	<input type="text" id="inpt" placeholder="Enter No." ><br>
+	<input type="text" class="first" id="inpt" placeholder="Enter No." ><br><br>
 	<button onclick="firstPatten()">First Patten</button>
 	<button onclick="secondPatten()">Second Patten</button>
 	<button onclick="thirdPatten()">Third Patten</button>
-	<button onclick="demo()">Demo Patten</button>
+	<button onclick="table()">Table</button>
+	<br><br>
+	<input type="text" class="second" id="inp1" placeholder="1st value" >
+	<input type="text" class="second" id="inp2" placeholder="2nd Value" >
+	<button onclick="even()">Even</button>
+	<button onclick="odd()">Odd</button>
 
 	<p id="demo"></p>
 
@@ -80,27 +105,59 @@
 			document.getElementById("demo").innerHTML = text;
 		}
 
-		// Demo 
-		function demo(){
+
+
+//Table
+		function table(){
 			var limt = document.getElementById("inpt").value;
-			var star="*";
 			var text="";
 
-			for(var i=1; i<=limt; i++){
-				var j;
-				for(j=1; j<=limt-i; j++){
-					text+="&nbsp;&nbsp;";
+			for(var i=1; i<=10; i++){
+				if (limt !=0) {
+					text+= i*limt + "<br>";
 				}
-				for(; j<=limt; j++){
-					text+= star;
-				}
-				for(j=1; j<=i; j++){
-					text+= star;
-				}
-				text +="<br>";
-			}
 
+			}
+			
 			document.getElementById("demo").innerHTML = text;
+		}
+
+
+
+//Even
+		function even(){
+			var inp1 = document.getElementById("inp1").value;
+			var inp2 = document.getElementById("inp2").value;
+			var text="";
+
+			for(var i=inp1; i<=inp2; i++){
+				if((i % 2) ==0){ 
+					console.log(i);
+					text += i + "<br>";
+					document.getElementById("demo").innerHTML = text;
+				}
+
+			}
+			
+			
+		}
+
+
+//Odd
+		function odd(){
+			var inp1 = document.getElementById("inp1").value;
+			var inp2 = document.getElementById("inp2").value;
+			var text="";
+
+			for(var i=inp1; i<=inp2; i++){
+				if((i % 2) !=0){ 
+					console.log(i);
+					text += i + "<br>";
+					var x = document.getElementById("demo").innerHTML = text;
+				}
+
+			}
+			
 		}
 
 	</script>
