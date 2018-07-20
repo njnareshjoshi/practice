@@ -1,0 +1,40 @@
+<body>
+<input id="input1">
+<button onclick="pss()"> try </button>
+<p id="dis1"> </p>
+<script>
+var haa=[];
+
+function check(){
+var you=[];
+var i,j;
+var res=1;
+for(i=0;i<haa.length;i++) {
+  for(j=0;j<haa.length;j++)
+    { if(i==j) { res=res*1 }
+      else {res=res*haa[j] }
+    }
+	console.log(res);
+	you.push(res);
+	console.log(you);
+	res=1;
+}
+document.getElementById("dis1").innerHTML = you;
+
+}
+
+function pss()
+{
+ var ire= document.getElementById("input1").value;
+  var str = ire.split(",");
+  for(i=1;i<=str.length;)
+	{ var x = parseInt(i);
+		haa.push(x);
+		console.log(haa);
+		i++;
+	}
+	check();
+}
+
+</script>
+</body>
