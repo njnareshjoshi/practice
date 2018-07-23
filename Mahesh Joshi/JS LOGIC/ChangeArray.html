@@ -11,25 +11,35 @@
 
 	<script>
 		var myArray = [];
+		var newArray = [];
 		function changeValue(){
 			var inp = document.getElementById("input").value;
 			var strArray = inp.split(",");
-
-			var rst=1;
-
+			var rst = 1;
 			for(i=0; i< strArray.length; i++){
-				
 				myArray[i]= parseInt(strArray[i]);
-
-				
-			}
-			for(var i=0; i<myArray.length; i++){
-				rst = rst*i;
-				var x = rst/i;
-
-				console.log(rst);
 			}
 
+			for(i=0; i < myArray.length; i++){
+				for(j=0; j < myArray.length; j++){
+					var a = myArray[i];
+					var b = myArray[j];
+					if (i == j) {
+						rst = rst*1;
+					}
+					else {
+						rst=rst* myArray[j] ;
+					}
+				}
+
+				newArray.push(rst);
+
+				rst =1;
+			}
+
+			console.log(newArray);
+			document.getElementById("output").innerHTML = newArray;
+			
 			
 		}
 	</script>
