@@ -7,7 +7,8 @@
 		*{
 			margin: 0px;
 			padding: 0px;
-			background-color: lightgrey;
+			background-color: grey;
+
 		}
 		#container {
 			width: 408px;
@@ -18,72 +19,76 @@
 			width: 100px;
 			height: 100px;
 			border: 1px solid black;
-			background-color: grey;
+			background-color: white;
 			float: left;
 		}
-		.red { background-color: red;}
-		.white { background-color: white;}
+		.red { 
+			background-color: red;
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+			float: left;
+		}
+		.white {
+			background-color: green;
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+			float: left;
+		}
 
-		/*.active{background-color: red}*/
 	</style>
 </head>
 <body>
 
 	<div id="container">
-		<div class="box active" onclick="ChanceColor(this)"></div>
-		<div class="box" onclick="ChanceColor(this)"></div>
-		<div class="box" onclick="ChanceColor(this)"></div>
-		<div class="box" onclick="ChanceColor(this)"></div>
-		<div class="box" onclick="ChanceColor(this)"></div>
-		<div class="box" onclick="ChanceColor(this)"></div>
-		<div class="box" onclick="ChanceColor(this)"></div>
-		<div class="box" onclick="ChanceColor(this)"></div>
-		<div class="box" onclick="ChanceColor(this)"></div>
-		<div class="box" onclick="ChanceColor(this)"></div>
-		<div class="box" onclick="ChanceColor(this)"></div>
-		<div class="box" onclick="ChanceColor(this)"></div>
-		<div class="box" onclick="ChanceColor(this)"></div>
-		<div class="box" onclick="ChanceColor(this)"></div>
-		<div class="box" onclick="ChanceColor(this)"></div>
-		<div class="box" onclick="ChanceColor(this)"></div>
-	</div>
+		<div class="box" id="01"  onclick="ChanceColor(this)"></div>
+		<div class="box" id="02" onclick="ChanceColor(this)"></div>
+		<div class="box" id="03" onclick="ChanceColor(this)"></div>
+		<div class="box" id="04" onclick="ChanceColor(this)"></div>
 
-<!-- 	<script>
-		function mUp(obj) {
-   			 obj.style.backgroundColor="red";
-		}
-		function mDown(obj) {
-   			 obj.style.backgroundColor="grey";
-		}
-	</script> -->
+		<div class="box" id="11" onclick="ChanceColor(this)"></div>
+		<div class="box" id="12" onclick="ChanceColor(this)"></div>
+		<div class="box" id="13" onclick="ChanceColor(this)"></div>
+		<div class="box" id="14" onclick="ChanceColor(this)"></div>
+
+		<div class="box" id="21" onclick="ChanceColor(this)"></div>
+		<div class="box" id="22" onclick="ChanceColor(this)"></div>
+		<div class="box" id="23" onclick="ChanceColor(this)"></div>
+		<div class="box" id="24" onclick="ChanceColor(this)"></div>
+
+		<div class="box" id="31" onclick="ChanceColor(this)"></div>
+		<div class="box" id="32" onclick="ChanceColor(this)"></div>
+		<div class="box" id="33" onclick="ChanceColor(this)"></div>
+		<div class="box" id="34" onclick="ChanceColor(this)"></div>
+	</div>
 
 	<script type="text/javascript">
 		function ChanceColor(obj){
-			if (obj.innerHTML== "") {
-				obj.style.backgroundColor= "red";
-				return;
-			}
-			if (obj.style.backgroundColor== "red") {
-				obj.style.backgroundColor= "white";
-				return;
-			}
-			if (obj.style.backgroundColor== "red") {
-				obj.style.display= "none";
-				return;
-			}
+			var id = obj.id; 
+			var arr = id.split("");
+			var r = parseInt(arr[0]);
+			var c = parseInt(arr[1]);
 
+			var left = r +""+ (c-1);
+			var right = r +""+ (c+1);
+			var top =  (r-1) +""+ c;
+			var doun =  (r+1) +""+ c;
+
+			if(obj.className != "red"){
+				 if( obj.left.className != "red",
+					obj.right.className != "red",
+					obj.top.className != "red",
+					obj.doun.className != "red"
+				 ){
+				 	obj.className = "red";
+				 }		
+			}
+			else{
+				obj.className = "white";
+			}
 		}
-		//obj.style.backgroundColor= "red"
-
-		// var header = document.getElementById("container");
-		// var btns = header.getElementsByClassName("box");
-		// for (var i = 0; i < btns.length; i++) {
-  // 			btns[i].addEventListener("click", function() {
-  //  			 	var current = document.getElementsByClassName("active");
-  //  			 	current[0].className = current[0].className.replace(" active", "");
-  //  			 	this.className += " active";
-  // 			});
-		// }
+		
 	</script>
 </body>
 </html>
