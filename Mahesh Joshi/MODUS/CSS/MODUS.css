@@ -1,0 +1,471 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.container {
+	width: 100%;
+}
+.wrap {
+	width: calc(75% - 2px); 
+	margin: auto;
+	height: 1620px;
+	border: 1px solid grey;
+}
+.center {
+	width: 80%;
+	margin: auto;
+}
+#header {
+	width: 100%;
+	height: 50px;
+	color: white;
+	padding-top: 15px;
+	background-color: skyblue;
+}
+#header #left {
+	float: left;
+	width: 30%;
+}
+#header #left h2 span {
+	font-weight: normal;
+}
+#header #right {
+	display: inline-block;
+	width: 65%;
+}
+#header #right ul{
+	width: 100%;
+	list-style: none;
+}
+#header #right ul li {
+	float: left;
+	width: calc(14% - 10px);
+	padding: 5px;
+	font-size: 10px;
+	position: relative;
+}
+#header #right ul li a { 
+	text-decoration: none; 
+	display: block;
+	color: white;
+}
+#header #right	ul li:hover { background-color: orange; }
+#header #right ul li:hover > ul {display: block; }
+#header #right ul li ul {
+	position: absolute;
+	display: none;
+	background-color: red;
+	width: 130px;
+	height: 80px;
+	z-index: 2;
+	left: ;
+	top: 22px;
+	padding: 3px;
+}
+#header #right ul li ul li {
+	width: 120px;
+	height: 15px;
+	line-height: 15px;
+}
+#header #right ul li ul li:hover { background-color: skyblue; }
+#header #right ul li ul li span { margin-right: 5px; }
+
+#header #search {
+	width: 5%;
+	float: right;
+}
+#header #search a {
+	text-decoration: none;
+	color: white;
+}
+
+
+#poster {
+	width: 100%;
+	height: 250px;
+	position: relative;
+	background: url('../images/bulding.jpg') no-repeat;
+	background-size: cover;
+}
+#poster button{
+	background-color: red;
+	color: white;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	position: absolute;
+	z-index: 2;
+	border: 1px solid red;
+	font-size: 18px;
+}
+#poster #btn1 {
+	left: 0px;
+	top: 40%;
+}
+#poster #btn2 {
+	right: 0px;
+	top: 40%;
+}
+#poster #heding {
+	width: 300px;
+	height: 40px;
+	top: 30%;
+	left: 32%;
+	border-radius: 3px;
+	position: absolute;
+	background-color: red;
+	color: white;
+	z-index: 2;
+	text-align: center;
+}
+#poster #para {
+	width: 350px;
+	height: 35px;
+	top: 50%;
+	left: 29%;
+	border-radius: 3px;
+	text-align: center;
+	position: absolute;
+	background-color: black;
+	color: white;
+	z-index: 2;
+	font-size: 12px;
+	padding: 5px 10px;
+	line-height: 15px;
+}
+#main {
+	width: 100%;
+	height: 350px;
+	background-color: white;
+
+}
+#head {
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	margin: 25px 0px;
+	background-color: grey;
+}
+#head #left {
+	width: 70%;
+	float: left;
+}
+#head #left h3 {
+	 font-size: 20px;
+	 margin-bottom: 3px;
+}
+#head #left p {
+	font-size: 12px;
+}
+#head #right {
+	width: 30%;
+	display: inline-block;
+}
+#head #right button {
+	padding: 10px 25px;
+	background-color: red;
+	color: white;
+	float: right;
+}
+
+#other {
+	width: 100%;
+	height: 200px;
+}
+#other .deails {
+	width: calc(25% - 22px);
+	height: 180px;
+	float: left;
+	margin-left: 10px;
+	background-color: lightgrey;
+	border: 1px solid grey;
+	padding: 20px 5px;
+	position: relative;
+}
+#other .deails #icon {
+	text-align: center;
+	color: skyblue;
+	font-size: 32px;
+}
+#other .deails h3 {
+	text-align: center;
+	color: grey;
+	font-size: 16px;
+	margin: 10px 0px;
+}
+#other .deails p {
+	font-size: 12px;
+	text-align: center;
+}
+#other .deails #btn button {
+	position: absolute;
+	width: calc(70%);
+	left: 15%;
+	bottom: -20px;
+	padding: 10px 20px;
+	background-color: skyblue; 
+	border: 1px solid skyblue; 
+	color: white;
+}
+#other #datail_1 { background-color: white; margin-left: 0px; }
+#other #datail_1 #icon { color: red;}
+#other .deails #btn button {	
+	background-color: red; 
+	border: 1px solid red; 
+}
+
+
+#whyModus {
+	width: 100%;
+	height: 180px;
+	margin-top: 20px;
+	padding-top: 20px;
+	text-align: center;
+	background-color: lightgrey;	
+}
+#whyModus .center { position: relative; height: 180px; }
+#whyModus h2 {
+	color: red;
+	letter-spacing: 1px;
+}
+#whyModus p {
+	font-size: 10px;
+	margin: 5px 0px 20px 0px;
+} 
+#whyModus  #image {
+	position: absolute;
+	bottom: -40%;
+	left: 0px;
+	width: 100%;
+}
+#whyModus  #image img {
+	width: 100%;
+	height: 170px;
+}
+
+
+#about {
+	width: 100%;
+	height: 210px;
+	padding-top: 100px;
+	background-color: lightgrey;
+}
+
+#about #feature1 {
+	width: calc(25% - 5px);
+	float: left;
+}
+#about #feature1 h4 {
+	margin-bottom: 15px;
+}
+#about #feature1 ul {
+	padding-left: 15px;
+}
+#about #feature1 ul li {
+	font-size: 13px;
+	line-height: 20px;
+}
+#about #feature2{
+	width: calc(50% - 10px);
+	padding: 0px 5px;
+	display: inline-block;
+}
+#about #feature2 p {
+	font-size: 13px;
+	margin-top: 10px;
+}
+#about #feature2 .mesure{
+	float: left; 
+	width: calc(25% - 10px);
+	padding: 0px 5px;
+	margin-top: 20px;
+}
+#about #feature2 .mesure h4 {
+	font-size: ;
+	margin: 10px 0px; 
+	text-align: center;
+}
+#about #feature2 .mesure img {
+	width: 100%;
+	height: 70px;
+}
+
+#about #feature3 {
+	width: calc(25% - 5px);
+	float: right;
+}
+#about #feature3 #comment {
+	width: calc(100% - 10px);
+	margin-top: 15px;
+	padding: 10px;
+	height: 100px;
+	font-size: 13px;
+	background-color: white;
+	position: relative;
+}
+#about #feature3 #comment #tip {
+	width: 0px;
+	height: 0px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 30px solid white;
+	position: absolute;
+	left: 50%;
+	bottom: -20px;
+	z-index: 1;
+}
+
+
+#jquery {
+	width: 100%;
+	height: 140px;
+	padding-top: 15px;
+	background-color: lightgrey;
+}
+#jquery h4 {
+	margin: 10px 0px;
+}
+#span1 {
+	width: 20%;
+	float: left;
+}
+#jquery #span2 {
+	width: 65%;
+	display: inline-block;
+}
+#jquery #span3 {
+	width: 10%;
+	float: right;
+}
+#jquery i {
+	width: 20px;
+	height: 20px;
+	font-size: 15px;
+	color: white;
+	background-color: black;
+	text-align: center;
+	margin-left: 5px;
+	border-radius: 3px;
+	line-height: 20px;
+}
+#jquery #pic {
+	width: 100%;
+	height: 50px;
+	margin-top: 15px;
+}
+#jquery #pic  img {
+	width: calc(25% - 40px);
+	padding: 0px 20px;
+	height: 50px;
+	float: left;
+}
+
+
+#footer{
+	width: 100%;
+	height: 184px;
+	background-color: skyblue;
+	color: white;padding-top: 20px;
+}
+#footer .moreDetail {
+	width: calc(33% - 20px);
+	padding-right: 20px;
+	float: left;
+}
+#footer #firstDiv h2 span {
+	font-weight: normal;
+}
+#footer #firstDiv #p1 {
+	font-size: 12px;
+	margin: 15px 0px;
+}
+#footer #firstDiv #p2 {
+	font-size: 13px;
+}
+#footer #firstDiv #p2 span {
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 8px;
+	font-style: italic;
+}
+
+#footer #secondDiv #left{
+	float: left;
+	width: 50%;
+}
+#footer #secondDiv #right{
+	display: inline-block;
+	width: 50%;
+}
+#footer #secondDiv h4 { 
+	color: black; 
+	margin-bottom: 16px; 
+	text-align: left;
+}
+#footer #secondDiv ol li {
+	font-size: 12px;
+	line-height: 17px;
+}
+#footer #secondDiv ol {
+	padding-left: 20px;
+	width: calc(100% - 20px);
+}
+#footer #thirdDiv h3 { margin-bottom: 15px; }
+#footer #thirdDiv h3 span {
+	font-weight: normal;
+	font-style: italic;
+	
+}
+#footer #thirdDiv #left {
+	width: 20%; 
+	float: left;
+	height: 40px;
+	margin-bottom: 20px;
+}
+#footer #thirdDiv #left img {
+	width: 100%;
+	height: 40px;
+}
+#footer #thirdDiv #right {
+	width: calc(80% - 15px); 
+	display: inline-block;
+	height: 40px;
+	margin-bottom: 20px;
+	padding-left: 15px;
+}
+#footer #thirdDiv #right #p1 {
+	font-size: 12px;
+}
+#footer #thirdDiv #right #p2 {
+	font-size: 13px;
+	color: black;
+	margin-top: 3px;
+}
+
+
+#footer-doun {
+	widows: 100%;
+	height: 20PX;
+	padding: 10px 0px;
+	color: white;
+	background-color: blue;
+}
+#footer-doun #left {
+	float: left;
+	width: 40%;
+	text-align: left;
+	font-size: 11px;
+}
+#footer-doun #right {
+	float: right;
+	width: 25%;
+} 
+#footer-doun #right ul {
+	list-style: none;
+	width: 100%;
+}
+#footer-doun #right ul li{
+	float: left;
+	width: calc(25% - 10px);
+	padding: 0px 5px;
+}

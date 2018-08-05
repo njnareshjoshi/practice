@@ -1,0 +1,414 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.container {
+	width: 100%
+}
+.wrap {
+	width: calc(80% - 2px);
+	margin: auto;
+	height: 1530px;
+	border: 1px solid grey;
+	background-color: #DFDFDF;
+}
+.middel{
+	width: 80%;
+	margin: auto;
+}
+
+#header {
+	width: 100%;
+	height: 50px;
+	border-top: 4px solid black;
+	padding: 15px 0px;
+}
+#header #left {
+	float: left;
+	width: 65%;
+}
+#header #left button {
+	height: ;
+	width: ;
+	padding: 5px 10px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 22px;
+}
+#header #left span {
+	color: grey;
+	font-size: 25px;
+	font-weight: bold;
+	padding-left: 10px;
+	font-style: italic;
+}
+
+#header #right {
+	float: right;
+	width: 35%;
+}
+#header #right input {
+	width: 60%;
+	height: ;
+	background-color: black;
+	color: grey;
+	padding: 5px;
+	float: right;
+}
+#nav {
+	width: 100%;
+	height: 30px;
+	padding: 15px 0px;
+	border-top: 1px solid grey;
+}
+#nav #left {
+	float: left;
+	width: 70%;
+}
+#nav #left ul {
+	width: 100%;
+	list-style: none;
+}
+#nav #left ul li {
+	float: left;
+	width: calc(14% - 22px);
+	font-size: 11px;
+	text-align: center;
+	padding: 5px 10px;
+}
+#nav #left ul li  a {
+	text-decoration: none;
+	color: grey;
+}
+#nav #left ul #active {
+	background-color: orange;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+#nav #right {
+	display: inline-block;
+	width: 30%;
+	text-align: right;
+}
+#nav #right button {
+	padding: 5px 10px;
+	background-color: skyblue;
+	color: white;
+}
+#nav #right span {
+	padding-right: 10px;
+}
+
+
+#poster {
+	width: 100%;
+	height: 280px;
+	background-color: #1EA6E5;
+	color: white;
+	padding: 30px 0px;
+}
+#poster #left {
+	float: left;
+	width: calc(50% - 15px);
+	padding-right: 15px;
+}
+#poster #left h2 {
+	font-size: 25px;
+	line-height: 25px;
+}
+#poster #left #p1{
+	font-size: 20px;
+	margin: 20px 0px 15px 0px;
+}
+#poster #left span {
+	font-size: 13px;
+}
+#poster #left button {
+	margin-top: 20px;
+	padding: 5px 10px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: .1px;
+	border-radius: 5px;
+}
+#poster #left #btn1{ color: black; margin-right: 10px; }
+#poster #left #btn2{ background-color: orange; }
+
+#poster #right {
+	display: inline-block;
+	width: 50%;
+}
+#poster #right #image {
+	width: 100%;
+	height: 250px;
+}
+#poster #right #image img {
+	width: 100%;
+	height: 250px;
+} 
+#feture {
+	width: calc(100%);
+	height: 60px;
+	padding-top: 50px;
+}
+#feture .center {
+	width: calc(80% - 2px);
+	margin: auto;
+	height: 60px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	border: 1px solid grey;
+}
+#feture .market {
+	float: left;
+	width: calc(25% - 19px);
+	padding: 9px;
+	color: grey;
+	border-right: 1px solid grey;
+}
+#feture #market-rgt {border-right: 0px;}
+#feture .market #lft {
+	width: 30%;
+	float: left;
+}
+#feture .market #lft img {
+	width: calc(100% - 10px);
+	height: 40px;
+	padding-right: 10px;
+}
+#feture .market #rgt {
+	width: 70%;
+	display: inline-block;
+}
+#feture .market #rgt #h1 {
+	color: red;
+}
+#feture .market #rgt p {
+	font-size: 10px;
+	margin-top: 4px;
+}
+
+
+#bstFeture {
+	width: 100%;
+	height: 260px;
+	padding: 20px 0px;
+	background-color: ;
+	margin-top: 15px;
+}
+#bstFeture #left {
+	float: left;
+	width: calc(50% - 10px);
+	padding-right: 10px;
+}
+#bstFeture #left img {
+	width: 100%;
+	height: 220px;
+}
+#bstFeture #left p {
+	font-size: 12px;
+	margin-top: 10px;
+} 
+#bstFeture #right {
+	display: inline-block;
+	width: calc(50% - 10px);
+	padding-left: 10px;
+}
+#bstFeture #right h3 {
+	color: blue;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+#bstFeture #right #p1 {
+	padding-right: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#bstFeture #main {
+	width: 100%;
+	height: 80px;
+}
+#bstFeture #main #lft {
+	float: left;
+	width: calc(50% - 15px);
+	padding-left: 15px;
+	font-size: 13px;
+}
+#bstFeture #main #rgt {
+	display: inline-block;
+	width: calc(50% - 15px);
+	padding-left: 15px;
+	font-size: 13px;
+}
+#bstFeture #right #p2 {
+	padding-right: 30px;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+
+#about{
+	width: 100%;
+	height: 200px;
+	margin: 20px 0px;
+}
+#about .mid {
+	width: calc(80% - 50px);
+	margin: auto;
+	height: 150px;
+	padding: 15px;
+	border: 10px solid grey;
+	outline: ;
+}
+#about h3 {
+	color: red;
+	font-size: ;
+	margin-bottom: 15px;
+}
+#about q {
+	padding: 0px 15px;
+	font-size: 22px;
+	color: grey;
+	font-style: italic;
+}
+#about p {
+	margin-top: 15px;
+	font-size: 12px;
+}
+#about button {
+	font-size: 10px;
+	letter-spacing: .2px;
+	padding: 5px;
+}
+
+
+#footer {
+	width: 100%;
+	height: 320px;
+	background-color: #3D3F3F;
+	color: white;
+	padding-top: 15px;
+	border-top: 8px solid grey;
+}
+#footer .otherDatail {
+	float: left;
+	width: calc(25% - 10px);
+	padding-right: 10px;
+}
+#footer .otherDatail h4 {
+	font-size: 14px;
+	border-bottom: 1px solid white;
+	padding: 10px 0px;
+}
+#footer .otherDatail .other {
+	margin: 7px 0px;
+}
+#footer .otherDatail .other h5 {
+	padding: 7px 0px;
+}
+#footer .otherDatail .other button {
+	padding: 3px;
+	background-color: orange;
+	border-radius: 3px;
+	margin-right: 10px;
+	letter-spacing: .1px;
+	font-size: 10px;
+}
+#footer .otherDatail .other p {
+	font-size: 11px;	
+}
+#footer .otherDatail .other i {
+	color: orange;
+	margin-right: 10px;
+	font-size: 20px;
+}
+#footer .otherDatail .other #p1 {
+	font-size: 11px;
+	padding-left: 15%;	
+}
+#footer .otherDatail .image{  }
+#footer .otherDatail .image img {
+	margin-top: 15px;
+	width: calc(50% - 10px);
+	height: 70px;
+	float: left;
+	padding: 5px;
+}
+#footer .otherDatail #text {
+	background-color: white;
+	color: black;
+	width: calc(100% - 16px);
+	height: 100px;
+	border: 3px solid white;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 14px;
+	margin-top: 20px;
+	position: relative;
+	z-index: 2;
+}
+#footer .otherDatail #text span {
+	color: red;
+}
+#footer .otherDatail #text h5 { 
+	color: red; 
+	font-size: 14px;
+	margin: 10px 0px; 
+}
+#footer .otherDatail #text #p2 {
+	font-size: 11px;
+	margin-top: 10px;
+} 
+#footer .otherDatail #text #tooltic {
+	width: 0px;
+	height: 0px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 30px solid white;
+	position: absolute;
+	left: 50%;
+	bottom: -20px;
+	z-index: 1;
+}
+
+
+#footer-doun {
+	width: 100%;
+	height: 30px;
+	padding: 10px 0px;
+	color: grey;
+	font-size: 9px;
+}
+#footer-doun #PD {
+	width: 50%;
+	float: left;
+}
+#footer-doun #PD #fst {
+	font-size: 13px;
+	font-weight: bold;
+	color: black;
+	margin-right: 10px;
+}
+#footer-doun #navi {
+	width: 50%;
+	display: inline-block;
+}
+#footer-doun #navi ul{
+	width: 100%;
+	list-style: none;
+}
+#footer-doun #navi ul li {
+	float: left;
+	width: calc(14% );
+	font-size: 9px;
+	text-align: center;
+}
+#footer-doun #navi ul li  a {
+	text-decoration: none;
+	color: grey;
+}
+#footer-doun #navi ul #active {
+	color: black;
+}
